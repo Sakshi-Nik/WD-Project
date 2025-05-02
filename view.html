@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View Products</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .category-buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .category-buttons a {
+      background: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      margin: 5px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .category-buttons a:hover {
+      background: #e74c3c;
+    }
+    .product-category {
+      display: none;
+    }
+    .product-category:target {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    body:not(:has(:target)) #dress {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Fashion World</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="view.html">View Products</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Our Products</h2>
+
+    <div class="category-buttons">
+      <a href="#dress">Dress</a>
+      <a href="#sandals">Sandals</a>
+      <a href="#purse">Purse</a>
+      <a href="#shoes">Shoes</a>
+      <a href="#cosmetics">Cosmetics</a>
+      <a href="#saree">Saree</a>
+    </div>
+
+    <div id="dress" class="product-category">
+      <div class="product">
+        <img src="https://designerbridalroom.com.hk/media/catalog/product/cache/5d5f6e8268e97a7c120ac58c8ed511b8/r/o/rosa-clara-2020-4t135-minimalist-red-crepe-slit-gown_01.jpg" alt="Dress 1">
+        <h3>Red Dress</h3>
+        <p>$1000</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Au-OcyyvwutRYmkXgpQKFFWnLiT4UWFslg&s" alt="Dress 2">
+        <h3>Pink Cocktail Dress</h3>
+        <p>$850</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/7a/b6/fd/7ab6fd78dac8205b31460a085a609b87.jpg" alt="Dress 2">
+        <h3>Blue Summer Dress</h3>
+        <p>$950</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/7103YD5h4ML._AC_UY350_.jpg " alt="Dress 2">
+        <h3>Maroon Short Dress</h3>
+        <p>$500</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+    </div>
+      <div class="product">
+        <img src="https://media.phase-eight.com/image/upload/f_auto,q_auto,dpr_auto/w_600/p8-catalog/images/10008190880/10008190880-01-lucinda-spot-print-dress?_i=AG" alt="Dress 2">
+        <h3>Black Cocktail Dress</h3>
+        <p>$600</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://www.jiomart.com/images/product/original/rvedx2v4vf/fabflee-women-red-printed-chiffon-a-line-dress-red-product-images-rvedx2v4vf-4-202209202134.jpg?im=Resize=(500,630)" alt="Dress 2">
+        <h3>Red Cocktail Dress</h3>
+        <p>$480</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+    
+    </div>
+
+    
+    <div id="sandals" class="product-category">
+      <div class="product">
+        <img src="https://img.kwcdn.com/product/fancy/c79282af-be51-456e-b9f3-68bcdec47f9d.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Sandals 1">
+        <h3>Leather Sandals</h3>
+        <p>$550</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/94/57/bd/9457bd6dace174a9791285581841e537.jpg" alt="Sandals 1">
+        <h3>Stone Sandals</h3>
+        <p>$400</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51Q9HuJmf-L._AC_UF894,1000_QL80_.jpg" alt="Sandals 1">
+        <h3>White Sandals</h3>
+        <p>$300</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://img.kwcdn.com/product/fancy/653f4b26-457e-4726-816a-82e7047ae83b.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Sandals 1">
+        <h3>Black Sandals</h3>
+        <p>$440</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div id="purse" class="product-category">
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHoWxj6joBOdH3syZJzTcHEPO0hm6D5_l6Sg&s" alt="Purse 1">
+        <h3>White Purse</h3>
+        <p>$200</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://homafy.com/wp-content/uploads/2020/07/Designer-Ladies-Purse.jpeg" alt="Purse 1">
+        <h3>Pink Purse</h3>
+        <p>$250</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://m.theblockart.com/ImageStorage/BA2016202311602AM972858.jpeg" alt="Purse 1">
+        <h3>Black Purse</h3>
+        <p>$400</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://dynokart.in/wp-content/uploads/2018/03/IMG_2931-1.jpg" alt="Purse 1">
+        <h3>Gray Purse</h3>
+        <p>$480</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div id="shoes" class="product-category">
+      <div class="product">
+        <img src="https://5.imimg.com/data5/HC/WL/MY-38197357/ladies-fancy-heel-shoes.jpg" alt="Shoes 1">
+        <h3>Kitten Hill</h3>
+        <p>$400</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQ4o9TDHmhgFSLfYfeVWyNo9y0c5qPJXdXpxZORrlI0vHLFchNWs0Uz4zMaYjKZKgyjo&usqp=CAU" alt="Shoes 1">
+        <h3>Peep Toe</h3>
+        <p>$300</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://img2.exportersindia.com/product_images/bc-full/2020/1/4707566/ladies-shoes-1579777443-5267153.jpeg" alt="Shoes 1">
+        <h3>Gumshoes</h3>
+        <p>$250</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51Exiwn4CgL._AC_UY1000_.jpg" alt="Shoes 1">
+        <h3>Moccasion</h3>
+        <p>$240</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div id="cosmetics" class="product-category">
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCH9eHO1O6IiWaIDRPQgtXJZaFcZ8Nhx6-w&s" alt="Cosmetic 1">
+        <h3>Lipstick Set</h3>
+        <p>$150</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51yiMsn9T-L._AC_UF1000,1000_QL80_.jpg" alt="Cosmetic 1">
+        <h3>Foundation Set</h3>
+        <p>$200</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://img.freepik.com/free-vector/vector-3d-realistic-perfume-bottle-women-shiny-glass-container-with-pink-liquid_33099-1226.jpg?semt=ais_hybrid&w=740" alt="Cosmetic 1">
+        <h3>Perfumes Set</h3>
+        <p>$200</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/l44hyfk0/hair-accessory/z/n/8/cute-princess-hair-clips-for-girls-for-party-wear-7-7-clips-hair-original-imagf3fvgzmx5xdu.jpeg?q=90&crop=false" alt="Cosmetic 1">
+        <h3>Jewellery Set</h3>
+        <p>$150</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div id="saree" class="product-category">
+      <div class="product">
+        <img src="https://zaribanaras.com/cdn/shop/files/4_714f06d5-7e05-4fe4-b814-29964f695be5_1024x1024.jpg?v=1711605845" alt="Saree 1">
+        <h3>Banarasi Saree</h3>
+        <p>$1200</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/AUGUST/6/uQlZNooT_ac6154ed7e364c8bb16a32f54c5b6405.jpg" alt="Saree 1">
+        <h3>chiffon saree</h3>
+        <p>$2000</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://www.anantexports.in/cdn/shop/files/IMG-20241202_193524.jpg?v=1733148361&width=1946" alt="Saree 1">
+        <h3>Kanjivaram Saree</h3>
+        <p>$5000</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="https://treevesto.com/product/pic172318666.jpg" alt="Saree 1">
+        <h3> Paithani Saree</h3>
+        <p>$4500</p>
+        <a href="buy.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top: 10%;">
+    &copy; 2025 DressStore. All rights reserved.
+  </footer>
+</body>
+</html>
